@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.colorRed {
+    color: red;
+}
+
+.colorBlue {
+    color: blue;
+}
+
+.colorRB {
+    color: rgba(60, 192, 34, 0.808);
+}
+
+.active {
+    background-color: cornflowerblue !important;
+}
+
+#music {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.format {
+    width: 350px;
+    padding: 12px;
+    box-shadow: 0 0 5px -1px #000;
+    border-radius: 4px;
+}
+
+#playList::-webkit-scrollbar {
+    width: 6px;
+} 
+
+#playList::-webkit-scrollbar-thumb {
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+#playList::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+.container {
+    width: 320px;
+    margin-top: -12px;
+    background-color: #fff;
+    z-index: 100;
+    padding-top: 16px;
+}
+
+.playList {
+    overflow-y: scroll;
+    margin-left: 5%;
+    height: 500px;
+}
+
+.header p {
+    font-size: 12px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.nameSong {
+    text-align: center;
+}
+
+.cdSong {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cdSong img {
+    width: 150px;
+    height: 150px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin: 10px auto;
+    margin-bottom: 28px;
+}
+
+.control {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 12px;
+    position: relative;
+}
+
+.btn {
+    font-size: 26px;
+    opacity: 0.8;
+}
+
+.none {
+    display: none;
+}
+
+#rangeSong {
+    width: 100%;
+    margin: 18px 0;
+}
+
+.song {
+    display: flex;
+    border-radius: 6px;
+    background: #d7d7e4f1;
+    padding: 8px 16px;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+.song:hover {
+    background-color: cadetblue;
+    transform: scale(1.02);
+}
+
+.song .avatar img {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.song .body {
+    width: 70%;
+    margin: 0 12px;
+    padding-top: 6px;
+}
+
+.song .body .title {
+    font-size: 16px;
+}
+
+.song .body .author {
+    opacity: 0.6;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.song .option {
+    padding-top: 16px;
+}
+
+/* admin */
+
+.admin {
+    text-align: center;
+    border-top: 1px solid rgba(0,0,0,0.2);
+}
+
+.admin__title {
+    padding: 26px;
+    font-weight: 600;
+}
+
+.admin__icon {
+    display: flex;
+    justify-content: center;
+}
+
+.admin__icon .icon {
+    margin: 12px 10px;
+    font-size: 24px;
+}
+
+.admin__title span {
+    transition: 0.4s;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./asset/fontawesome-free-6.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./asset/style.css">
+</head>
+<body>
+    <div id="music">
+        <div id="main" class="format">
+            <div class="container">
+                <header class="header">
+                    <p>Now playing</p>
+                    <h3 class="nameSong">String tên bài</h3>
+                </header>
+                <div class="cd">
+                    <div class="cdSong">
+                        <img src="./asset/img/song1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="control">
+                    <div class="btn rePlay">
+                        <i class="fa-solid fa-rotate-left"></i>
+                    </div>
+                    <div class="btn backSong">
+                        <i class="fa-sharp fa-solid fa-circle-chevron-left"></i>
+                    </div>
+                    <div class="btn playSong">
+                        <div class="btnPlay">
+                            <i class="fa-solid fa-circle-play"></i>
+                        </div>
+                        <div class="btnPause none">
+                            <i class="fa-solid fa-circle-pause"></i>
+                        </div>
+                    </div>
+                    <div class="btn nextSong">
+                        <i class="fa-sharp fa-solid fa-circle-chevron-right"></i>
+                    </div>
+                    <div class="btn randomSong">
+                        <i class="fa-sharp fa-solid fa-shuffle"></i>
+                    </div>
+                </div>
+                <input type="range" name="" id="rangeSong" value="0" step="1" min="0" max="100">
+                <audio src="" id="audio"></audio>
+            </div>
+            <div class="admin">
+                <p class="admin__title"></p>
+                <p class="admin__name">My name is Nguyễn Vũ Tiến Độ</p>
+                <div class="admin__icon">
+                    <a href="https://www.facebook.com/doxinhzai.infor" class="icon colorBlue">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#" class="icon colorRed">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="#" class="icon colorRB">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="playList format" id="playList"></div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
