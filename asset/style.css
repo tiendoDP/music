@@ -121,7 +121,8 @@ html {
 
 .song:hover {
     background-color: cadetblue;
-    transform: scale(1.02);
+    transform: scale(1.05);
+    transition: 0.5s;
 }
 
 .song .avatar img {
